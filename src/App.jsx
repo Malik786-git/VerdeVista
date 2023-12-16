@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={privateRoutes} />
+      <RouterProvider router={userRole === 1 ? privateRoutes : publicRoutes} />
     </>
   );
 }
